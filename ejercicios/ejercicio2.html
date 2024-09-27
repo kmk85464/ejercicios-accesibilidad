@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lan="es">
 <head>
 <meta charset="utf-8" />
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -109,7 +109,7 @@ header {
 </head>
 <body>
     <header>
-        <img src="./img/logo.jpeg" alt="Logo">
+        <img src="./img/logo.jpeg" alt="">
         <title>Pets home</title>
         <nav>
             <ul>
@@ -123,22 +123,24 @@ header {
 <div class="title">Contacto</div>
 <form action="" method="post">
 <p>
-<div >Nombre:</div> <input type="text"  />
+<label for="nombreid">Nombre:</label> <input type="text"  id="nombreid"/>
 <br />
-<div >Apellidos:</div> <input type="text"  />
+<label for="apellidosid">Apellidos:</label> <input type="text"  id="apellidosid"/>
 <br />
-Gender:
-<input type="radio" name="gender" value="Hombre" id="gender-male"/> 
-<input type="radio" name="gender" value="Mujer" id="gender-female" /> 
+<fieldset>
+    <legend>Gender:</legend>
+    <input type="radio" name="gender" value="Hombre" id="gender-male"/> <label for="gender-male">Male</label>
+    <input type="radio" name="gender" value="Mujer" id="gender-female" /> <label for="gender-female">Female</label>
+</fieldset>
 <br />
-Animal favorito:
-<select name="animal favorito">
+<label for="animalfavoritoid">Animal favorito</label>
+<select name="animal favorito" id="animalfavoritoid">
 <option >Perro</option>
 <option >Gato</option>
 <option >Pez</option>
 </select>
 <br />
-<input type="submit"  />
+<input type="submit"  value="Enviar" />
 </p>
 </form>
 </div>
